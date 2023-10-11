@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:gravity="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hit's Score: "
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/hitScoreTv"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/sanitaryWaste"
+            android:layout_width="130dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="120dp"
+            android:src="@drawable/sanitarywaste"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/wetWaste"
+            android:layout_width="130dp"
+            android:layout_height="170dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="16dp"
+            android:src="@drawable/wetwaste"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:layout_constraintBottom_toTopOf="@id/eWaste"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/wetWaste" />
+
+        <TextView
+            android:id="@+id/imageName"
+            android:layout_width="match_parent"
+            android:text="Printer"
+            android:textSize="16sp"
+            android:fontFamily="@font/lemon"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/eWaste"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageView" />
+
+
+        <ImageView
+            android:id="@+id/dryWaste"
+            android:layout_width="130dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/drywaste"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/eWaste"
+            android:layout_width="141dp"
+            android:layout_height="186dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="32dp"
+            android:src="@drawable/ewaste"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
+
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--    xmlns:tools="http://schemas.android.com/tools"-->
+    <!--    android:layout_width="match_parent"-->
+    <!--    android:layout_height="match_parent"-->
+    <!--    android:gravity="center"-->
+    <!--    android:orientation="vertical"-->
+    <!--    tools:context=".MainActivity">-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/binImageView1"-->
+    <!--        android:layout_width="200dp"-->
+    <!--        android:layout_height="200dp"-->
+    <!--        android:src="@drawable/dish1"-->
+    <!--        android:scaleType="fitCenter" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/binImageView2"-->
+    <!--        android:layout_width="100dp"-->
+    <!--        android:layout_height="100dp"-->
+    <!--        android:src="@drawable/ic_launcher_background"-->
+    <!--        android:scaleType="fitCenter" />-->
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/dropArea"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_marginTop="16dp"-->
+    <!--        android:layout_marginBottom="16dp"-->
+    <!--        android:background="@android:color/darker_gray"-->
+    <!--        android:orientation="vertical"-->
+    <!--        android:gravity="center">-->
+
+    <!--        <ImageView-->
+    <!--            android:id="@+id/photoImageView"-->
+    <!--            android:layout_width="100dp"-->
+    <!--            android:layout_height="100dp"-->
+    <!--            android:src="@drawable/ic_launcher_background"-->
+    <!--            android:scaleType="fitCenter" />-->
+
+    <!--        &lt;!&ndash; Add any additional UI elements here &ndash;&gt;-->
+
+    <!--    </LinearLayout>-->
+
+    <!--</LinearLayout>-->
+
+
